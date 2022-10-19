@@ -1,0 +1,89 @@
+:root{
+    --BORDER: 2px solid #000;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: papayawhip;
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    font-size: 1.25rem;
+}
+
+.logo{
+    width: 9.6em;
+    height: auto;
+}
+
+nav{
+    /* border: var(--BORDER); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    /* border: var(--BORDER); */
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+ul li{
+    /* border: var(--BORDER); */
+    list-style-type: none;
+}
+
+a:any-link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+header{
+    /* border: var(--BORDER); */
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+main{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
