@@ -55,9 +55,11 @@ header{
 }
 
 .flex-container{
+    border: 0.5em dashed green;
     background-color: papayawhip;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    gap: 0.25em;
 }
 
 main{
@@ -81,5 +83,22 @@ footer{
     align-items: center;
 }
 
+@media screen and (max-width:900px) {
+    .logo{
+        display: none;
+    }
+    
+    .flex-container{
+        display: block;
+    }
 
+    .flex-container aside{
+        height: 48.9%;
+    }
+
+    .flex-container main{
+        min-height: 50%;
+        margin-top: 0.25em;
+    }
+}
 
