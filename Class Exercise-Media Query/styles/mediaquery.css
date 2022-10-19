@@ -4,6 +4,9 @@
     --alternativeColor: rgba(99, 99, 99, 0.5);
     --greenColor: green;
     --awesomeColor: rgb(143, 163, 65);
+
+    /* GENERAL */
+    --BORDER: 2px solid #000;
 }
 
 *,
@@ -30,15 +33,41 @@ body{
 
 
 .logo{
-    width: 5rem;
+    width: 5.8rem;
     height: auto;
 }
 
-header,footer{
+header{
+    /* border: var(--BORDER); */
     background-color: var(--awesomeColor);
     grid-column: 1/4;
 }
 
+aside{
+    /* border: var(--BORDER); */
+    background-color: lightcoral;
+}
+
+main{
+    /* border: var(--BORDER); */
+    background-color: lightgray;
+}
+
+footer{
+    /* border: var(--BORDER); */
+    background-color: var(--awesomeColor);
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .flex-container{
+    /* border: var(--BORDER); */
     background-color: var(--secondaryColor);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1/4;
 }
